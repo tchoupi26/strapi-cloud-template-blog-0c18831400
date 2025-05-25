@@ -1,0 +1,15 @@
+{
+  "kind": "collectionType",
+  "collectionName": "intention_seos",
+  "info": {
+    "singularName": "intention-seo",
+    "pluralName":  "intention-seos",
+    "displayName": "Intention SEO"
+  },
+  "attributes": {
+    "label":       { "type": "string", "required": true },
+    "slug":        { "type": "uid",    "targetField": "label", "required": true },
+    "description": { "type": "text" },
+    "order":       { "type": "integer" }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "collectionName": "components_content_images",
+  "info": { "displayName": "Image", "icon": "image" },
+  "attributes": {
+    "media":   { "type": "media", "multiple": false, "required": true, "allowedTypes": ["images"] },
+    "caption": { "type": "string" }
+  }
+}

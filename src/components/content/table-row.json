@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_content_table_rows",
+  "info": { "displayName": "Table Row", "icon": "table" },
+  "attributes": {
+    "provider":    { "type": "string", "required": true },
+    "price":       { "type": "decimal" },
+    "warranty":    { "type": "string" },
+    "advantages":  { "type": "text" },
+    "ctaLabel":    { "type": "string" },
+    "ctaURL":      { "type": "string" }
+  }
+}

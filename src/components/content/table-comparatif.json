@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_content_table_comparatifs",
+  "info": { "displayName": "Table Comparatif", "icon": "table" },
+  "attributes": {
+    "title": { "type": "string" },
+    "rows": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.table-row"
+    }
+  }
+}

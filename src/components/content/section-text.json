@@ -1,0 +1,8 @@
+{
+  "collectionName": "components_content_section_texts",
+  "info": { "displayName": "Section Texte", "icon": "align-left" },
+  "attributes": {
+    "title": { "type": "string" },
+    "body":  { "type": "richtext" }
+  }
+}

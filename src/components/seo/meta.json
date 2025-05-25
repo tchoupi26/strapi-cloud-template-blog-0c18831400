@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_seo_metas",
+  "info": { "displayName": "metaSEO", "icon": "search" },
+  "attributes": {
+    "metaTitle":       { "type": "string", "required": true, "maxLength": 60 },
+    "metaDescription": { "type": "text",   "maxLength": 160 },
+    "canonicalURL":    { "type": "string" },
+    "metaRobots": {
+      "type": "enumeration",
+      "enum": ["index,follow", "noindex,follow", "index,nofollow", "noindex,nofollow"],
+      "default": "index,follow"
+    },
+    "ogTitle":       { "type": "string" },
+    "ogDescription": { "type": "text" },
+    "ogImage":       { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "structuredData":{ "type": "json" }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_seos",
+  "info": {
+    "singularName": "page-seo",
+    "pluralName":  "page-seos",
+    "displayName": "Page SEO",
+    "description": "Pages optimisées pour les intentions de recherche"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "title":          { "type": "string", "required": true },
+    "slug":           { "type": "uid",    "targetField": "title", "required": true },
+    "permalink":      { "type": "string", "unique": true },
+    "motClePrincipal":{ "type": "string" },
+
+    "type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::type-client.type-client"
+    },
+    "categorie": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::categorie-assurance.categorie-assurance"
+    },
+    "sousCategorie": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::intention-seo.intention-seo"
+    },
+    "metiers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::metier.metier"
+    },
+
+    "intro":   { "type": "richtext" },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "content.section-text",
+        "content.image",
+        "content.table-comparatif",
+        "content.calcul-simulation",
+        "content.testimonial-slider",
+        "content.anchor-menu",
+        "common.cta",
+        "faq.item"
+      ]
+    },
+
+    "seo": { "type": "component", "component": "seo.meta", "repeatable": false }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "collectionType",
+  "collectionName": "type_clients",
+  "info": {
+    "singularName": "type-client",
+    "pluralName": "type-clients",
+    "displayName": "Type Client"
+  },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "name": { "type": "string", "required": true, "unique": true },
+    "slug": { "type": "uid",    "targetField": "name", "required": true }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_content_testimonial_sliders",
+  "info": { "displayName": "Testimonial Slider", "icon": "star" },
+  "attributes": {
+    "title": { "type": "string" },
+    "testimonials": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::testimonial.testimonial"
+    }
+  }
+}

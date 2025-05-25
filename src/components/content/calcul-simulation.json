@@ -1,0 +1,9 @@
+{
+  "collectionName": "components_content_calcul_simulations",
+  "info": { "displayName": "Calcul Simulation", "icon": "calculator" },
+  "attributes": {
+    "label":   { "type": "string", "required": true },
+    "formula": { "type": "string", "required": true },
+    "fields":  { "type": "json",   "required": true }
+  }
+}
